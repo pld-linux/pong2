@@ -1,7 +1,7 @@
 # TODO:
 #   - cleanup
 Summary:	Pong2 - game inspired by the classical Atari game
-Summary(pl):	Pong2 - gra zainspirowana klasyczn± gr± z Atari
+Summary(pl.UTF-8):   Pong2 - gra zainspirowana klasycznÄ… grÄ… z Atari
 Name:		pong2
 Version:	0.1.0
 Release:	0.1
@@ -26,10 +26,10 @@ An up till now two player (networked) game inspired by the classical
 "Pong" from Atari, which adds another dimension to the playing field.
 Crazy graphics, fast gameplay, great fun ;)
 
-%description -l pl
-Jest to sieciowa gra dla (jak na razie) dwóch graczy zainspirowana
-klasyczn± gr± "Pong" z Atari, dodaj±ca dodatkowy wymiar do pola gry.
-Zwariowana grafika, szybka akcja, du¿o zabawy ;)
+%description -l pl.UTF-8
+Jest to sieciowa gra dla (jak na razie) dwÃ³ch graczy zainspirowana
+klasycznÄ… grÄ… "Pong" z Atari, dodajÄ…ca dodatkowy wymiar do pola gry.
+Zwariowana grafika, szybka akcja, duÅ¼o zabawy ;)
 
 %prep
 %setup -q
