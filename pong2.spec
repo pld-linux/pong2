@@ -1,7 +1,7 @@
 # TODO:
 #   - cleanup
 Summary:	Pong2 - game inspired by the classical Atari game
-Summary(pl.UTF-8):   Pong2 - gra zainspirowana klasyczną grą z Atari
+Summary(pl.UTF-8):	Pong2 - gra zainspirowana klasyczną grą z Atari
 Name:		pong2
 Version:	0.1.0
 Release:	0.1
