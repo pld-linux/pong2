@@ -1,22 +1,19 @@
-# TODO:
-#   - cleanup
 Summary:	Pong2 - game inspired by the classical Atari game
 Summary(pl.UTF-8):	Pong2 - gra zainspirowana klasyczną grą z Atari
 Name:		pong2
-Version:	0.1.0
+Version:	0.1.3
 Release:	0.1
-Epoch:		0
 License:	GPL v2
-Vendor:		Johannes Jordan
 Group:		X11/Applications/Games
 Source0:	http://download.berlios.de/pong2/%{name}-%{version}.tar.bz2
-# Source0-md5:	651340b5f15544d82912de85d62c7efc
+# Source0-md5:	b27c827a060c1d0aebb4d0df825fcada
 URL:		http://pong2.berlios.de/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel >= 1.2.4
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_net-devel
 BuildRequires:	SDL_ttf-devel
+BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,8 +32,9 @@ Zwariowana grafika, szybka akcja, dużo zabawy ;)
 %setup -q
 
 %build
-# ??? aclocal alone can make only troubles
-%{__aclocal}
+%{__aclocal} -I m4
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
